@@ -8,13 +8,17 @@ export default function Home() {
             </Header>
             <Container>
                 <Container main>
+                <NewNote>
+                <InputNewNote type='text' placeholder="Adicione uma nova nota" />
+                <ButtonNewNote><ion-icon name="add-circle"></ion-icon></ButtonNewNote>
+                </NewNote>
                 <Note>
                     Note do usuário fica aquiiiiiiiii
-                    <ion-icon name="trash-outline"></ion-icon>
+                    <ion-icon name="trash"></ion-icon>
                 </Note>
                 <Note>
                     Note do usuário fica aquiiiiiiiii
-                    <ion-icon name="trash-outline"></ion-icon>
+                    <ion-icon name="trash"></ion-icon>
                 </Note>
                 </Container>
             </Container>
@@ -71,8 +75,7 @@ const Note = styled.div`
     border-radius: 5px;
     box-shadow: 0px 0px 3px 1px #FBD89F;
     color: #000000;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 300;
     position: relative;
 
@@ -83,4 +86,46 @@ const Note = styled.div`
         font-size: 18px;
         color: #FCA311;
     }
+`
+
+const NewNote = styled.div`
+    width: 85%;
+    height: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    ion-icon{
+        font-size: 50px;
+        color: #FCA311;
+        background-color: #E5E5E5;
+    }
+`
+
+const InputNewNote = styled.input`
+    width: 89%;
+    height: 100px;
+    background-color: #FFFFFF;
+    text-align: left;
+    padding: 10px;
+    border-style: none;
+    border-color: #FCA311;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 1px #FBD89F;
+    color: #000000;
+    font-size: 25px;
+    font-weight: 400;
+`
+
+const ButtonNewNote = styled.div`
+    width: 10%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #FCA311;
+    background-color: #E5E5E5;
 `
