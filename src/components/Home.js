@@ -12,6 +12,10 @@ export default function Home() {
                     Note do usuário fica aquiiiiiiiii
                     <ion-icon name="trash-outline"></ion-icon>
                 </Note>
+                <Note>
+                    Note do usuário fica aquiiiiiiiii
+                    <ion-icon name="trash-outline"></ion-icon>
+                </Note>
                 </Container>
             </Container>
         </>
@@ -50,20 +54,22 @@ const Container = styled.div`
         background-color: #E5E5E5;
         padding-top: 180px;
         display: flex;
-        align-items: flex-start;
-        justify-content: center;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
     `}
 `
 
 const Note = styled.div`
     width: 85%;
     height: auto;
+    margin-bottom: 30px;
     background-color: #FFFFFF;
     text-align: left;
     padding: 10px;
     border-color: #FCA311;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 1px #FBD89F;
+    box-shadow: 0px 0px 3px 1px #FBD89F;
     color: #000000;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 22px;
