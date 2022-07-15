@@ -8,7 +8,10 @@ export default function Home() {
             </Header>
             <Container>
                 <Container main>
-
+                <Note>
+                    Note do usuário fica aquiiiiiiiii
+                    <ion-icon name="trash-outline"></ion-icon>
+                </Note>
                 </Container>
             </Container>
         </>
@@ -21,7 +24,7 @@ const Header = styled.header`
     left: 0;
     z-index: 1;
     width: 100%;
-    height: 100px;
+    height: 110px;
     box-shadow: 0px 3px 10px 0px #3E3E3E;
     background-color: #14213D;
     display: flex;
@@ -45,5 +48,33 @@ const Container = styled.div`
         width: 70%;
         height: 1000px;
         background-color: #E5E5E5;
+        padding-top: 180px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
     `}
+`
+
+const Note = styled.div`
+    width: 85%;
+    height: auto;
+    background-color: #FFFFFF;
+    text-align: left;
+    padding: 10px;
+    border-color: #FCA311;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px #FBD89F;
+    color: #000000;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    position: relative;
+
+    ion-icon{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 18px;
+        color: #FCA311;
+    }
 `
